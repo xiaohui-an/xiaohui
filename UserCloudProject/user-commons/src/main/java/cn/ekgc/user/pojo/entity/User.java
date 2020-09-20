@@ -20,7 +20,7 @@ public class User  implements Serializable {
 		private  String idCard;                 //身份证号码
 		private  String email;                  //电子邮件
 		private  Date createTime;               //创建时间
-		private Date updateTime;                //修改时间
+		private  Date updateTime;                //修改时间
 
 
 	public Long getId() {
