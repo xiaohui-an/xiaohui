@@ -6,19 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="user-provider" />
         <module name="user-register" />
         <module name="user-commons" />
+        <module name="user-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="user-commons" target="1.8" />
+      <module name="user-consumer" target="1.8" />
       <module name="user-parent" target="1.8" />
+      <module name="user-provider" target="1.8" />
       <module name="user-register" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="user-commons" options="-parameters" />
+      <module name="user-consumer" options="-parameters" />
+      <module name="user-provider" options="-parameters" />
       <module name="user-register" options="-parameters" />
     </option>
   </component>

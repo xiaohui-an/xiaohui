@@ -1,27 +1,23 @@
 package cn.ekgc.user.pojo.entity;
 
-import sun.awt.image.IntegerComponentRaster;
-
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * <b>用户信息实体</b>
- * @author  xiaohui
- * @version  4.1.0
+ * @author Arthur
+ * @version 4.1.0
  * @since 1.0.0
  */
-public class User  implements Serializable {
+public class User implements Serializable {
 	private static final long serialVersionUID = 4853697898306087409L;
-		private  Long id;                       //主键
-		private  String name;                   //姓名
-		private  String cellphone;              //手机号码
-		private  String password;               //登录密码
-		private  String idCard;                 //身份证号码
-		private  String email;                  //电子邮件
-		private  Date createTime;               //创建时间
-		private  Date updateTime;                //修改时间
-
+	private Long id;                        // 主键
+	private String name;                    // 姓名
+	private String cellphone;               // 手机号码
+	private String idCard;                  // 身份证号码
+	private String email;                   // 电子邮件
+	private Date createTime;                // 创建时间
+	private Date updateTime;                // 修改时间
 
 	public Long getId() {
 		return id;
@@ -45,14 +41,6 @@ public class User  implements Serializable {
 
 	public void setCellphone(String cellphone) {
 		this.cellphone = cellphone;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
 	}
 
 	public String getIdCard() {
